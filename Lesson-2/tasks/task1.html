@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2_task1</title>
+</head>
+<body>
+    <div>
+        <h1>Задача #1</h1>
+        <p>
+            Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+        </p>
+    </div>
+    <script>
+        // Отримуємо значення першої задачі
+        let sumNum, multNum, divNum, firstNum, secondNum;
+        firstNum = parseInt(prompt('Введіть значення a', 0))
+        secondNum = parseInt(prompt('Введіть значення b', 0))
+
+        // Обчислюємо значення задач
+        sumNum = firstNum + secondNum
+        multNum = firstNum * secondNum
+        divNum = firstNum / secondNum
+        // Виводимо значення першої задачі
+        document.write(`
+        Ви ввели перше значення: ${firstNum}</br>
+        Ви ввели друге значення: ${secondNum}</br>
+        ===================</br>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th scope="col">Сума</th>
+                    <th scope="col">Добуток</th>
+                    <th scope="col">Частка</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${sumNum}</td>
+                    <td>${multNum}</td>
+                    <td>${divNum}</td>
+                </tr>
+        </table>
+        `) 
+        
+
+    </script>
+</body>
+</html>
